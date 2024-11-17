@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maison Intelligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="login-container">
+        <h1>Connexion</h1>
+        <form id="login-form">
+            <label for="nickname">Surnom :</label>
+            <input type="text" id="nickname" required>
+            
+            <label for="class">Classe :</label>
+            <input type="text" id="class" required>
+            
+            <button type="submit">Commencer le Quiz</button>
+        </form>
+    </div>
+
+    <div id="quiz-container" class="quiz-container hide">
+        <h1>Quiz Maison Intelligente</h1>
+        <p id="user-info"></p>
+        <div id="question-container" class="question-container">
+            <h2 id="question">Question</h2>
+            <div id="answer-buttons" class="answer-buttons">
+                <button class="answer-btn">Réponse 1</button>
+                <button class="answer-btn">Réponse 2</button>
+                <button class="answer-btn">Réponse 3</button>
+                <button class="answer-btn">Réponse 4</button>
+            </div>
+        </div>
+        <div id="score-display" class="score-display hide">
+            <p>Score pour cette question : <span id="question-score">0</span></p>
+        </div>
+        <button id="next-btn" class="next-btn hide">Suivant</button>
+        <div id="final-score-container" class="hide">
+            <h2>Votre score total : <span id="total-score"></span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
